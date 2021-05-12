@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: ;
   color: white;
 
 }
@@ -9,6 +9,7 @@ body {
 hr {
   color: #22a4b9;
   background-color: #22a4b9;
+  width:
 }
 .navbar-brand {
   font-weight:bold;
@@ -18,4 +19,10 @@ hr {
 }
 .card {
   background-color: #22a4b9;
+}
+#segmentos {
+  background-color: black;
+}
+.navbar {
+  background: transparent
 }
