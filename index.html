@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name=author content="Sebastián Gómez Letelier">
+
+  <title>Desafio - Ricomida</title>
+
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/js/bootstrap.min.js">
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="ModalCorreo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          El correo fue enviado correctamente...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalFavoritos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Añadido a favoritos exitosamente...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #373A3C;">
+    <div class="container" >
+      <a class="navbar-brand" href="#" style="font-family: Lobster; font-size: 37pt; color:#FFFFFF">Ricomida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          </div>
+          <ul class="collapse navbar-collapse nav navbar-nav navbar-right flex-row-reverse" style="font-family: Cabin,; font-size: 16pt; color:#FFFFFF">
+            <li><a class="nav-link active" aria-current="page" href="#" >Contacto</a></li>
+            <li><a class="nav-link active" aria-current="page" href="#" >Nosotros</a></li>
+            <li><a class="nav-link active" aria-current="page" href="#" >Recetas</a></li>
+            <li><a class="nav-link active" aria-current="page" href="#" >Inicio</a></li>
+          </div>
+          </nav>
+
+
+
+<div class="container">
+  <div>
+  <div class="row">
+    <div class="col">
+      <div class="col">
+        <div class="card">
+          <div>
+            <img src="assets/img/principal.jpg" alt="img-principal" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="container align-items-center">
+<div>
+<p class="titulo-header text-sm-left text-center" >PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</p>
+</div>
+<hr>
+<div>
+<p class="subtitulo-header text-sm-left text-center">110 MIN/6 A 8 PORCIONES</p>
+</div>
+</div>
+<div >
+  <td >
+
+  <td scope="row"><button type="button" class="btn btn-light" id="enviarCorreo" data-toggle="modal" data-target="#ModalCorreo"  data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Presiona para enviar a tu correo">
+    Enviar por correo
+  </button>
+</td>
+</td>
+<td><button type="button" class="btn btn-light" id="añadirFavoritos" data-toggle="modal" data-target="#ModalFavoritos" data-toggle="popover" data-trigger="hover" data-placement="right" title="Agrega esta receta a tus favoritos">
+  Añadir a favoritos
+</button>
+</td>
+
+</div>
+
+    </div>
+  </div>
+</div>
+  </div>
+
+
+
+
+</div>
+
+
+
+
+<section>
+
+  <div class="container pt-4 pb-5 d-none d-sm-block">
+    <div id="pizzaCarousel" class="carousel slide " data-ride="carousel">
+
+      <ol class="carousel-indicators p-5" style="filter: invert(100%);">
+        <li data-target="#pizzaCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#pizzaCarousel" data-slide-to="1"></li>
+      </ol>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active text-center ">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/slider-1.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-3">
+              <img src="assets/img/slider-2.png" class="d-block w-100" alt="slider2">
+            </div>
+            <div class="col-3">
+              <img src="assets/img/slider-3.png" class="d-block w-100" alt="slider3">
+            </div>
+            <div class="col-3">
+              <img src="assets/img/slider-4.png" class="d-block w-100" alt="slider4">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item text-center">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/img/slider-5.png" class="d-block w-100" alt="slider5">
+            </div>
+            <div class="col-3">
+              <img src="assets/img/slider-6.png" class="d-block w-100" alt="slider6">
+            </div>
+            <div class="col-3">
+              <img src="assets/img/slider-7.png" class="d-block w-100" alt="slider7">
+            </div>
+            <div class="col-3">
+              <img src="assets/img/slider-8.png" class="d-block w-100" alt="slider8">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<hr>
+         <div class="container">
+                <div class="row p-4" >
+                  <div class="col-sm-6">
+                    <div class="col">
+                    <p class="ingredientes" id="ingredientes">INGREDIENTES</p>
+                    <hr>
+                    <a> Masa 20 gr de levadura seca instantánea</a><a> 1 cucharadita de azúcar</a><a> 500 ml agua tibia</a><a> 100 ml aceite vegetal</a><a> 4 cucharadas de aceite de oliva</a><a> 65 gr harina de maíz fina (chuchoca)</a><a> 2 cucharaditas de sal</a><a> 625 gr harina</a><p> Salsa</p><a> 5 cucharadas de aceite de oliva</a><a> ½ cebolla picada en cubos finos</a><a> 2 cucharaditas de sal</a><a> 3 cucharadas de Orégano Gourmet</a><a> 1 ½ cucharadas de Albahaca Gourmet</a><a> 2 tarro de tomates en cubos al natural</a><a> 2 cucharaditas de azúcar</a><p> Relleno</p><a> ½ cebolla, en cubos</a><a> 500 gr hojas de espinacas picadas</a><a> 400 gr de champiñones, laminados</a><a> 300 gr de queso mozarella.</a><a> 4 cucharadas queso parmesano</a>
+                  </div>
+                  </div>
+
+
+                  <div class="col-sm-6" >
+                    <div class="col">
+                    <p class="preparacion" id="preparacion">PREPARACIÓN</p>
+                    <hr>
+                    <a>
+                    <p><l>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos.Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</li></p>
+                    <p><l>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</li></p>
+                    <p><l>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</li></p>
+                    <p><l>4. Calentar el horno a 220C.</li></p>
+                    <p><l>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</li></p>
+                    <p><l>6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</li>
+                    </a>
+
+                  </div>
+                  </div>
+
+                    </div>
+
+
+              </div>
+
+<section>
+  <div class="row col d-flex justify-content-center">
+    <div class="col">
+      <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo1" aria-expanded="false" aria-controls="demo1">
+        <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="recipe1">
+        <div class="card-body">
+          <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+          <p class="card-text collapse"  id="demo1" >Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo2" aria-expanded="false" aria-controls="demo2">
+        <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="recipe2">
+        <div class="card-body">
+          <h5 class="card-title">TIRAMISÚ</h5>
+          <p class="card-text collapse" id="demo2" class="collapse">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo3" aria-expanded="false" aria-controls="demo3">
+        <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="recipe3">
+        <div class="card-body">
+          <h5 class="card-title">PLATEADA</h5>
+          <p class="card-text collapse" id="demo3" class="collapse">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<prefooter class="">
+
+  <nav class="navbar navbar-light justify-content-center" style="background-color: #DC3545; padding: 70pt">
+    <div class="prefooter1">SUSCRÍBETE EN NUESTRO NEWSLETTER </div>
+    <div class="prefooter2">y obtén las mejores recetas que tenemos en <span style="font-family: Lobster; ">Ricomida</span></div>
+
+    <div class="d-flex justify-content-center gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" style="background-color: #DC3545; border-color: white; margin: 20pt">Empezar</button>
+
+</div>
+
+  </nav>
+
+  </prefooter>
+
+
+<footer>
+ <nav class="navbar navbar-light bg-dark justify-content-center">
+   <a class="navbar-brand" href="#" style="font-family: Lobster; font-size: 37pt; color:#FFFFFF"> Ricomida</a>
+ </nav>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!--modal-->
+<script>
+  $(document).ready(function() {
+    $("#myModal").modal();
+  });
+</script>
+
+</body>
+</html>
