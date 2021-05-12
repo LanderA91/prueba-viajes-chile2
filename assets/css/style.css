@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+
+}
+#logo-viajes {
+  height: 2rem;
+}
+hr {
+  color: #22a4b9;
+  background-color: #22a4b9;
+}
+.navbar-brand {
+  font-weight:bold;
+}
+.carousel-control-prev {
+  opacity: 0;
+}
+.card {
+  background-color: #22a4b9;
+}
