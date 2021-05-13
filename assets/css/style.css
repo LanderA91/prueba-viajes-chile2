@@ -1,5 +1,6 @@
 body {
-  background-color: ;
+  position: relative;
+  background-color: black;
   color: white;
 
 }
@@ -13,16 +14,30 @@ hr {
 }
 .navbar-brand {
   font-weight:bold;
+  color: white;
+  ;
 }
 .carousel-control-prev {
-  opacity: 0;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.carousel-control-next {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .card {
   background-color: #22a4b9;
 }
-#segmentos {
-  background-color: black;
-}
 .navbar {
-  background: transparent
+  background: transparent;
+}
+.my-nav {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: none;
+}
+footer {
+  background-color: #22a4b9;
+
 }

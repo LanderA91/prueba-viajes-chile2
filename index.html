@@ -19,155 +19,30 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/js/bootstrap.min.js">
 
-
-
-
-
-
 </head>
+
 <body>
 
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="ModalCorreo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          El correo fue enviado correctamente...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="ModalFavoritos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Añadido a favoritos exitosamente...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-<section>
-
-  <div class="">
-    <div id="pizzaCarousel" class="carousel slide " data-ride="carousel">
-      <nav class="navbar transparent navbar-expand-lg navbar-fixed-top" style=" color">
-        <div class="container-fluid ">
-          <img src="assets/img/viajes.svg" alt="logo-viajes" id="logo-viajes">
-          <a class="navbar-brand" href="#frase-viajeschile">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Quienes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Destacados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-
-        <div class="carousel-inner">
-
-        <div class="carousel-item active text-center ">
-            <img src="assets/img/carousel1.jpg" class="img-fluid" alt="slider1">
-        </div>
-        <div class="carousel-item text-center ">
-            <img src="assets/img/carousel2.jpg" class="img-fluid" alt="slider1">
-        </div>
-        <div class="carousel-item text-center ">
-            <img src="assets/img/carousel3.jpg" class="img-fluid" alt="slider1">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  <button class="bnn" type="button" data-bs-target="#pizzaCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-    </div>
-  </div>
-</section>
-
-<nav class="navbar transparent navbar-inverse navbar-fixed-top">
-
-  <div class="container" >
-
+<nav class="navbar navbar-expand-lg navbar-dark my-nav" >
+  <div class="container-fluid" id="inicio">
     <img src="assets/img/viajes.svg" alt="logo-viajes" id="logo-viajes">
-    <a class="navbar-brand" href="#" style="font-family: ; color:#FFFFFF">Viajes Chile</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        </div>
-        <ul class="collapse navbar-collapse nav navbar-nav navbar-right flex-row-reverse" style="font-family: Cabin,; font-size: 16pt; color:#FFFFFF">
-          <li><a class="nav-link active" aria-current="page" href="#" >Contacto</a></li>
-          <li><a class="nav-link active" aria-current="page" href="#" >Nosotros</a></li>
-          <li><a class="nav-link active" aria-current="page" href="#" >Recetas</a></li>
-          <li><a class="nav-link active" aria-current="page" href="#" >Inicio</a></li>
-        </div>
-</nav>
-
-<nav class="navbar navbar-expand-lg" style=" color">
-  <div class="container-fluid">
-    <img src="assets/img/viajes.svg" alt="logo-viajes" id="logo-viajes">
-    <a class="navbar-brand" href="#frase-viajeschile">Navbar</a>
+    <a class="navbar-brand" href="#frase-viajeschile" style="color: white;">Viajes Chile</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"  style="color: white;"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Quienes somos</a>
+          <a class="nav-link" href="#quienesSomos">Quienes somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Destacados</a>
+          <a class="nav-link" href="#destacados">Destacados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
         </ul>
     </div>
@@ -175,78 +50,110 @@
 </nav>
 
 
-<section id="segmentos">
+
+
+
 <section>
-<div class="d-flex justify-content-center">
-  <a class="navbar-brand" href="#" style="font-family: ; color:#FFFFFF">Quiénes somos</a>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/img/carousel1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/carousel2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/carousel3.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+</section>
+
+
+
+<section>
+<div class="container b-5 d-flex justify-content-center">
+  <a class="navbar-brand" id="quienesSomos">Quiénes somos</a>
   </div>
 <hr>
 
 
-         <div class="container w-100">
+         <div class="row m-5 col d-flex justify-content-center">
                 <div class="row" >
-                <div class="border-light mb-3" style="max-width: 20rem;">
+                <div class="border-light mb-3 d-none d-sm-block" style="max-width: 30rem;">
                  <div class="card-body">
                   <i class=" card w-100 p-1 text-center fas fa-plane fa-2x"></i>
                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non est aliquam, condimentum ligula ut, facilisis justo. Curabitur sapien lectus, molestie at nisi sit amet, luctus feugiat eros. Vivamus at eros aliquam, ultrices nisl ut, pulvinar sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eget nunc vitae mi consequat vulputate. Quisque cursus urna id consequat lobortis. Sed accumsan leo in dictum tempor. Mauris et mauris dignissim eros vulputate faucibus sed in nulla. Donec congue vestibulum ligula. Nullam a placerat dui. Nullam ultrices bibendum nibh vitae hendrerit. Proin dui mauris, vestibulum non ligula aliquam, maximus sollicitudin velit. </p>
                  </div>
                 </div>
-                <div class="border-light mb-3" style="max-width: 20rem;">
+                <div class="border-light mb-3 d-none d-sm-block" style="max-width: 30rem;">
                  <div class="card-body">
 
                    <p class="card-text">Sed tincidunt fringilla pharetra. Cras vitae sagittis orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin dignissim sed magna vel fermentum. Nulla maximus congue lorem, in consectetur eros. Quisque ut suscipit odio. Pellentesque feugiat urna et sodales varius. Ut vitae odio congue, efficitur massa nec, condimentum eros. Cras tincidunt elit ipsum, vel mattis turpis ultrices sed. Morbi at feugiat lectus. Maecenas quis pretium metus. Duis accumsan diam posuere, iaculis nisi nec, viverra ante. Nam nibh diam, scelerisque ut ligula eu, tincidunt tincidunt purus. Nullam ornare, diam at sagittis fermentum, metus ex luctus purus, et iaculis metus ex eu urna. Nulla non consequat nibh, a gravida metus. </p>
                    <i class=" card w-100 p-1 text-center fas fa-mountain fa-2x"></i>
                  </div>
                 </div>
-                <div class="border-light mb-3" style="max-width: 20rem;">
+                <div class="border-light mb-3  d-none d-sm-block" style="max-width: 30rem;">
                  <div class="card-body">
                   <i class=" card w-100 p-1 text-center fas fa-route fa-2x"></i>
-                   <p class="card-text"> Curabitur eget lectus risus. Phasellus bibendum tincidunt justo, ut tempor metus hendrerit in. Vivamus placerat elit sed justo placerat sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet euismod lorem, viverra efficitur diam. Cras eget mi felis. Sed pellentesque tincidunt erat, a posuere justo auctor non. Cras pulvinar commodo efficitur. Suspendisse vitae lacus lacus. Sed bibendum semper ante, faucibus euismod est euismod quis. </p>
+                   <p class="card-text">Suspendisse eleifend aliquet ex quis lobortis. Morbi dignissim, metus ut porttitor maximus, enim sem pharetra sapien, ut ornare massa nisi id leo. Sed eget leo a augue ultrices fringilla id sed magna. Vestibulum scelerisque ligula eros, vel eleifend enim volutpat sed. Vestibulum consectetur sem orci, nec ornare dui aliquam eu. Vivamus metus lectus, feugiat gravida nisl eu, facilisis ultricies neque. Pellentesque nibh purus, semper nec odio vel, gravida efficitur ipsum. Nam sed quam egestas, pretium lorem sed, cursus velit. In ut nunc consequat nunc fringilla molestie nec nec ipsum. Mauris feugiat tellus vitae purus consectetur vestibulum. Suspendisse risus libero, semper sit amet sapien laoreet, congue tincidunt turpis. </p>
                  </div>
                 </div>
                     </div>
               </div>
 
+              </section>
+
 <section>
-<div class="d-flex justify-content-center">
-  <a class="navbar-brand" href="#" style="font-family: ; color:#FFFFFF">Viajes Chile</a>
+<div class="container b-5 d-flex justify-content-center">
+  <a class="navbar-brand" id="destacados">Destacados</a>
   </div>
 <hr>
 
-  <div class="row col d-flex justify-content-center">
-    <div class="col">
+  <div class="row m-5 col d-flex justify-content-center">
+    <div class="col p-3">
       <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo1" aria-expanded="false" aria-controls="demo1">
         <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
         <div class="card-body">
-          <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+          <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
           <p class="card-text collapse"  id="demo1" >Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col p-3">
       <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo2" aria-expanded="false" aria-controls="demo2">
         <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
         <div class="card-body">
-          <h5 class="card-title">TIRAMISÚ</h5>
+          <h5 class="card-title">Consectetur adipisicing elit</h5>
           <p class="card-text collapse" id="demo2" class="collapse">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col p-3">
       <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo3" aria-expanded="false" aria-controls="demo3">
         <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
         <div class="card-body">
-          <h5 class="card-title">PLATEADA</h5>
+          <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
           <p class="card-text collapse" id="demo3" class="collapse">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col p-3">
       <div class="card" style="width: 18rem;" data-toggle="collapse" data-target="#demo4" aria-expanded="false" aria-controls="demo4">
         <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
         <div class="card-body">
-          <h5 class="card-title">PLATEADA</h5>
-          <p class="card-text collapse" id="demo3" class="collapse">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+          <h5 class="card-title">Ut enim ad minim veniam</h5>
+          <p class="card-text collapse" id="demo4" class="collapse">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
         </div>
       </div>
     </div>
@@ -255,30 +162,32 @@
 </section>
 
 <section>
-<div class="d-flex justify-content-center">
-  <a class="navbar-brand" href="#" style="font-family: ; color:#FFFFFF">Contacto</a>
+<div class="container pt-3 d-flex justify-content-center">
+  <a class="navbar-brand" id="contacto">Contacto</a>
   </div>
+</section>
 <hr>
 
-  <nav class="navbar navbar-light justify-content-center" style="background-color: #DC3545; padding: 70pt">
-    <div class="prefooter1">SUSCRÍBETE EN NUESTRO NEWSLETTER </div>
-    <div class="prefooter2">y obtén las mejores recetas que tenemos en <span style="font-family: Lobster; ">Ricomida</span></div>
-
-    <div class="d-flex justify-content-center gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button" style="background-color: #DC3545; border-color: white; margin: 20pt">Empezar</button>
-
-</div>
-
-  </nav>
-
-  </prefooter>
+<div class="typeform-widget" data-url="https://form.typeform.com/to/zlMOmloX?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
+<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
 
-<footer>
- <nav class="navbar navbar-light bg-dark justify-content-center">
-   <a class="navbar-brand" href="#" style="; font-size: 37pt; color:#FFFFFF"> Ricomida</a>
- </nav>
-  </footer>
+
+
+  <footer>
+   <nav class="navbar navbar-light b-5">
+        <div class="container col d-flex justify-content-between">
+    <div><div class="p-3" style="font-weight: ; font-size: 2rem;">VIAJES CHILE</div></div>
+    <div><div class="p-3 2x">
+      <i class="fab fa-github-square fa-2x"></i>
+      <i class="fab fa-linkedin fa-2x"></i>
+      <i class="fab fa-twitter-square fa-2x"></i>
+      <i class="fab fa-facebook-square fa-2x"></i>
+    </div></div>
+    </div>
+   </nav>
+    </footer>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -289,12 +198,6 @@
 
 <script src="assets/js/scripts.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<!--modal-->
-<script>
-  $(document).ready(function() {
-    $("#myModal").modal();
-  });
-</script>
 
 </body>
 </html>
